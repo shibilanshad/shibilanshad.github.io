@@ -1,86 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shibil Anshad | Developer & Freelancer</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f6fa;
-        margin: 0;
-        padding: 0;
-        color: #2f3640;
-      }
-      header {
-        background-color: #273c75;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      section {
-        max-width: 800px;
-        margin: 30px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      h2 {
-        color: #192a56;
-      }
-      .contact a {
-        color: #273c75;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Shibil Anshad</h1>
-      <p>Python Developer | Video Editor | Telegram Bot Maker | Web Designer</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shibil Anshad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfcfa;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #ff3c00, #ff9d00);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin: 0 0 10px;
+    }
+    header p {
+      font-size: 20px;
+      margin: 0;
+    }
+    nav {
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #ff3c00;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project {
+      background: white;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .project h3 {
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 30px;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shibil Anshad</h1>
+    <p>Python Developer | Web Designer | Bot Maker | Editor</p>
+  </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a tech freelancer helping clients build Telegram bots, edit
-        high-impact reels, and create responsive websites. Fast, reliable, and
-        committed to quality.
-      </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      <h2>What I Offer</h2>
-      <ul>
-        <li>✅ Telegram Bots (custom, file bots, automation)</li>
-        <li>✅ Video Editing (Reels, Shorts)</li>
-        <li>✅ Web Design (Landing pages, business sites)</li>
-        <li>✅ Python Scripts / Automation</li>
-      </ul>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Shibil, a passionate and detail-oriented developer and designer based in Kerala. I specialize in creating sleek web designs, Python automation tools, Telegram bots, and short-form video edits. I love building fast, functional, and beautiful things on the internet.</p>
+  </section>
 
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>WebHunter</strong> – Web pentesting toolkit (Bash)</li>
-        <li>
-          <strong>Telegram Movie Bot</strong> – Smart search + delivery bot
-        </li>
-        <li>
-          <strong>Quick Bots</strong> – On-demand client bots (auto-reply, file
-          rename, spam filter)
-        </li>
-      </ul>
-
-      <h2>Contact Me</h2>
-      <div class="contact">
-        📞 <a href="tel:+919061828439">+91 9061828439</a><br />
-        📧 <a href="mailto:shibilanshadz@gmail.com">shibilanshadz@gmail.com</a
-        ><br />
-        💬 Telegram: <a href="https://t.me/shibilanshad">@BotDevByShibu</a
-        ><br />
-        🌐 LinkedIn:
-        <a href="https://linkedin.com/in/shibilanshad" target="_blank"
-          >linkedin.com/in/shibilanshad</a
-        >
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>WebHunter</h3>
+        <p>A bash-powered web application pentesting toolkit for ethical hackers. Lightweight and terminal-friendly.</p>
       </div>
-    </section>
-  </body>
+      <div class="project">
+        <h3>Quick Bot</h3>
+        <p>Custom Telegram bot that delivers movie files based on search with channel join verification.</p>
+      </div>
+      <div class="project">
+        <h3>WhizPay</h3>
+        <p>Simple UPI payment tracking system for freelancers to send QR and log payments automatically.</p>
+      </div>
+      <div class="project">
+        <h3>Fastfolio</h3>
+        <p>A one-page portfolio site generator for freelancers, instantly deployable via GitHub Pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📞 Phone: <a href="tel:+919061828439">+91 9061828439</a><br>
+       📧 Email: <a href="mailto:shibilanshadz@gmail.com">shibilanshadz@gmail.com</a><br>
+       💬 Telegram: <a href="https://t.me/BotDevByShibu">@BotDevByShibu</a><br>
+       🔗 LinkedIn: <a href="https://linkedin.com/in/shibilanshad">linkedin.com/in/shibilanshad</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Shibil Anshad. All rights reserved.
+  </footer>
+</body>
 </html>
